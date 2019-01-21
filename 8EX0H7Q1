@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="keywords" content="jQuery,jQuery插件,jQuery特效,jQuery ui,jQuery 教程,css3,html5,JS特效,网页特效">
+    <meta name="description" content="jQuery之家致力于搜集和整理各种jQuery插件，jQuery特效，jquery ui，jQuery 教程，JS特效，网页特效，以及各种html5，css3动画和效果，为前端开发者提供最全面的网页开发素材。" />
+    <title>jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+    <link rel="stylesheet" href="http://www.htmleaf.com/templets/default/css/common.css"> 
+    <link rel="stylesheet" href="http://www.htmleaf.com/templets/default/css/ad.css"> 
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="http://www.htmleaf.com/favicon.ico">
+    <link rel="apple-touch-icon" href="http://www.htmleaf.com/templets/default/images/ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://www.htmleaf.com/templets/default/images/ico/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://www.htmleaf.com/templets/default/images/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://www.htmleaf.com/templets/default/images/ico/apple-touch-icon-144.png">
+    <!--百度统计-->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?75c54d9855c6511931ab85e4b3a5de72";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <!--[if lt IE 9]>
+      <script src="http://www.htmleaf.com/assets/js/html5shiv.min.js"></script>
+      <script src="http://www.htmleaf.com/assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top bootsnav">
+    <div class="container-fluid">      
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand-mc" href="http://www.htmleaf.com/"><img src="http://www.htmleaf.com/images/logo.svg" class="logo" alt="jQuery之家-自由分享jQuery、html5、css3的插件库"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right nav-actions">
+                <li><a href="http://weibo.com/jqueryzhijia" data-toggle="tooltip" data-placement="bottom" title="关注jQuery之家的新浪微博" target="_blank"> <i class="fa fa-weibo"></i> <span class="hidden-md hidden-lg" style="font-size: 0.6em;">关注新浪微博</span></a></li>
+                <li><a href="http://koubei.baidu.com/s/htmleaf.com" data-toggle="tooltip" data-placement="bottom" title="请为jQuery之家在百度口碑上点个赞吧！" target="_blank"> <i class="fa fa-paw"></i> <span class="hidden-md hidden-lg" style="font-size: 0.6em;">百度口碑</span></a></li>
+                <li><a href="http://www.htmleaf.com/about/Contact_Us.html" data-toggle="tooltip" data-placement="bottom" title="联系我们"> <i class="fa fa-envelope-o"></i> <span class="hidden-md hidden-lg" style="font-size: 0.6em;">联系我们</span></a></li>
+            </ul>
+            <form name="formsearch" action="http://www.htmleaf.com/plus/search.php" rel="nofollow" id="global_search_form" method="post" class="navbar-form-mc navbar-right" role="search">
+                <div class="input-group input-group-nav">
+                    <input type="text" name="q" autocomplete="off"  id="input-search" class="form-control" placeholder="搜索从这里开始..." maxlength="60">
+                    <span class="input-group-btn">
+                        <a role="button" class="btn" aria-label="search button" id="search-btn">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>   
+</nav>
+
+    <div class="leaf-nav">
+  <div class="all-nav">
+    <div class="home">
+      <a class="home-logo" href="/">
+        <h1><i class="fa fa-leaf"></i></h1>
+        首页
+      </a>
+    </div>
+    <div class="item">
+      <div class="product">
+        <a href="http://www.htmleaf.com/jQuery/" target="_blank">
+        <h1><i class="fa fa-pagelines"></i></h1>
+        jQuery库
+        </a>
+      </div>
+      <div class="product-wrap pos01">
+        <h2>
+          <i class="fa fa-pagelines"></i> jQuery库
+        </h2>
+        <div class="gdt" style="height:90%">
+          <ul>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/pubuliuchajian/" target="_blank"><span class="ui-all ui-1"></span><span><i class="fa fa-rub"></i> 瀑布流插件 </span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/shijuecha/" target="_blank"><span class="ui-all ui-1"></span><span><i class="fa  fa-eye-slash"></i> 视觉差滚动效果 </span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Menu-Navigation/" target="_blank"><span class="ui-all ui-1"></span><span><i class="fa fa-list"></i> 菜单和导航 </span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Slideshow-Scroller/" target="_blank"><span class="ui-all ui-3"></span><span><i class="fa fa-film"></i> 幻灯片和轮播图</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Image-Effects/" target="_blank"><span class="ui-all ui-2"></span><span><i class="fa fa-photo"></i> 图片效果</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Form/" target="_blank"><span class="ui-all ui-4"></span><span><i class="fa fa-check-square-o"></i> 表单</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Tooltips/" target="_blank"><span class="ui-all ui-5"></span><span><i class="fa fa-comment"></i> 工具提示</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Table/" target="_blank"><span class="ui-all ui-6"></span><span><i class="fa fa-table"></i> 表格</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Rating-Star-Rating/" target="_blank"><span class="ui-all ui-7"></span><span><i class="fa fa-star-half-o"></i> 评分和星级</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Tabs/" target="_blank"><span class="ui-all ui-8"></span><span><i class="fa fa-folder"></i> 选项卡</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Accordion/" target="_blank"><span class="ui-all ui-9"></span><span><i class="fa fa-reorder"></i> 手风琴</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Lightbox-Dialog/" target="_blank"><span class="ui-all ui-10"></span><span><i class="fa fa-comments"></i> Lightbox和对话框</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Text-Link-Effects/" target="_blank"><span class="ui-all ui-11"></span><span><i class="fa fa-chain"></i> 文本和超链接</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Layout-Interface/" target="_blank"><span class="ui-all ui-12"></span><span><i class="fa fa-list-alt"></i> 布局和界面</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Calendar-Date-Time-picker/" target="_blank"><span class="ui-all ui-13"></span><span><i class="fa fa-calendar"></i> 日期时间选择器</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Color-Picker/" target="_blank"><span class="ui-all ui-14"></span><span><i class="fa fa-flask"></i> 颜色选择器</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Chart/" target="_blank"><span class="ui-all ui-15"></span><span><i class="fa fa-bar-chart"></i> 图表</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/Buttons-Icons/" target="_blank"><span class="ui-all ui-16"></span><span><i class="fa fa-toggle-on"></i> 按钮和图标</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/jQuery/jquery-tools/" target="_blank"><span class="ui-all ui-16"></span><span><i class="fa fa-wrench"></i> 工具类</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="product">
+        <a href="http://www.htmleaf.com/html5/" target="_blank">
+        <h1><i class="fa fa-html5"></i></h1>
+        HTML5库
+        </a>
+      </div>
+      <div class="product-wrap pos02">
+        <h2>
+          <i class="fa fa-html5"></i> HTML5库
+        </h2>
+        <div class="gdt" style="height:90%">
+          <ul>
+            <li>
+              <a href="http://www.htmleaf.com/html5/html5-canvas/" target="_blank"><span class="input-all input-1"></span><span><i class="fa fa-delicious"></i> Canvas </span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/html5/SVG/" target="_blank"><span class="input-all input-1"></span><span><i class="fa fa-slideshare"></i> SVG </span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/html5/html5donghua/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-fighter-jet"></i> HTML5动画</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/html5/html5youxi/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-soccer-ball-o"></i> HTML5游戏</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/html5/html5muban/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-newspaper-o"></i> HTML5模板</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/html5/yinpinheshipin/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-play"></i> 音频视频播放器</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="product">
+        <a href="http://www.htmleaf.com/css3/" target="_blank">
+        <h1><i class="fa fa-css3"></i></h1>
+        CSS3库
+        </a>
+      </div>
+      <div class="product-wrap pos03">
+        <h2>
+          <i class="fa fa-css3"></i> CSS3库
+        </h2>
+        <div class="gdt" style="height:90%">
+          <ul>
+            <li>
+              <a href="http://www.htmleaf.com/css3/animation/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-flag"></i> CSS3 animation</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/css3/transform/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-joomla"></i> CSS3 transform</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/css3/transition/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-magic"></i> CSS3 transition</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/css3/css3donghua/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-bus"></i> CSS3动画</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/css3/daohangcaidan/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-list-ul"></i> CSS3导航菜单</span></a>
+            </li>
+            <li>
+              <a href="http://www.htmleaf.com/css3/ui-design/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-slideshare"></i> UI界面设计</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+            <div class="product">
+              <a href="http://www.htmleaf.com/ziliaoku/" target="_blank">
+              <h1><i class="fa fa-ge"></i></h1>
+              资料库
+              </a>
+            </div>
+            <div class="product-wrap pos04">
+                <h2>
+                  <i class="fa fa-ge"></i> 资料库
+                </h2>
+              <div class="gdt" style="height:90%">
+                  <ul>
+                    <li>
+                      <a href="http://www.htmleaf.com/ziliaoku/font-awesome/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-flag"></i> Font Awesome</span></a>
+                    </li>
+                    <li>
+                      <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-graduation-cap"></i> 前端教程</span></a>
+                    </li>
+                    <li>
+                      <a href="http://www.htmleaf.com/jquery-doc/" target="_blank"><span class="input-all input-2"></span><span><i class="fa fa-file-text-o"></i> jQuery在线文档</span></a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+      </div>
+  
+  </div>
+</div>
+    <!--end leaf-nav-->
+    <div class="leaf-main-content-wrap">
+      <div class="leaf-main-content">
+        <!---->
+        <div class="site clearfix" role="main">
+          <div id="site-container" class="context-loader-container">
+            <section id="aws" class="aws-section">
+              <div class="leaf-header-container">
+                <div class="bg-animation">
+                  <img alt="Cloud-1" class="cloud cloud-1" src="http://www.htmleaf.com/templets/default/picture/cloud-1.png" width="300" />
+                  <img alt="Cloud-2" class="cloud cloud-2" src="http://www.htmleaf.com/templets/default/picture/cloud-2.png" width="347" />
+                  <img alt="corel" class="cloud corel" src="http://www.htmleaf.com/templets/default/picture/corel.png" width="50">
+                  <img alt="Cloud-3" class="cloud cloud-3" src="http://www.htmleaf.com/templets/default/picture/cloud-3.png" width="470" />
+                  <img alt="Cloud-4" class="cloud cloud-4" src="http://www.htmleaf.com/templets/default/picture/cloud-4.png" width="762" />
+                  <img alt="Cloud-5" class="cloud cloud-5" src="http://www.htmleaf.com/templets/default/picture/cloud-5.png" width="587" />
+                  <img alt="Cloud-6" class="cloud cloud-6" src="http://www.htmleaf.com/templets/default/picture/cloud-6.png" width="857" />
+                </div>
+                <div class="htmleaf-header-content">
+                  <h2>jQuery之家<br> 自由分享jQuery、html5和css3的插件库</h2>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!---->
+        <div class="ad-container">
+          <div class="ad-bg-top"></div>
+          <div class="ad-content">
+            <a rel="nofollow" href="https://u.mituo.cn/api/show/GYQuBHym" target="_blank">
+              <img src="http://www.htmleaf.com/templets/default/images/metinfo-1280-2.gif">
+            </a>
+          </div>
+        </div>
+        <!-- <div style="width: 100%;">
+          <div style="width:1280px;height:90px;overflow:hidden;margin:10px auto;">
+            <a rel="nofollow" href="https://www.metinfo.cn/product/?hmsr=htmleaf" target="_blank">
+                <img src="http://www.htmleaf.com/templets/default/images/metinfo-1280.gif">
+            </a>
+          </div>
+        </div> -->
+        <!---->
+        <div class="leaf-index-title">
+           <h2 class="ct-letterpress">最新插件</h2>
+        </div>
+        <div class="htmleaf-adv">
+            <div class="htmleaf-adv-content-jike">
+              <a href="https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=tbce34wd" target="_blank" rel="nofollow"><img src="http://www.htmleaf.com/templets/default/images/aliyun-250-250-2.jpg" alt="阿里云"></a>
+            </div>
+            <div class="htmleaf-jike-footer">
+              <p><a href="https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=tbce34wd" target="_blank" rel="nofollow">【全民云计算】云主机低至2折</a></p>
+              <p>爆款云服务器低至2折，1核1G¥293/元</p>
+            </div>
+        </div>
+        <!--插件-->
+        <div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901211536.jpg" width="250" height="158" alt="两款漂亮的bootstrap分页样式"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 174 </p>
+                <p><i class="fa fa-navicon"></i> UI界面设计</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/css3/ui-design/201901215502.html" target="_blank">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/css3/ui-design/201901215502.html" title="两款漂亮的bootstrap分页样式" target="_blank">两款漂亮的bootstrap分页样式</a>
+              </div>
+              <div class="plug-description">
+                这是两款漂亮的bootstrap分页样式。他们在元素bootstrap3分页样式的基础上，通过简单的CSS3代码来对它进行美化，生成漂亮的分页样式。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-21</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901181459.jpg" width="250" height="158" alt="纯CSS3用户卡片设计效果"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 336 </p>
+                <p><i class="fa fa-navicon"></i> UI界面设计</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/css3/ui-design/201901185500.html" target="_blank">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/css3/ui-design/201901185500.html" title="纯CSS3用户卡片设计效果" target="_blank">纯CSS3用户卡片设计效果</a>
+              </div>
+              <div class="plug-description">
+                这是一款纯CSS3用户卡片设计效果。该卡片设计效果结合SVG来制作，在鼠标hover卡片时，产生炫酷的动画效果。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-18</span>
+          </div>
+        </div>
+
+        <!-- <div class="htmleaf-adv">
+           <h3 class="htmleaf-adv-title">advertisement</h3>
+            <div class="htmleaf-adv-content">
+            <script type="text/javascript">
+                /*250*250 创建于 2015-04-07*/
+                var cpro_id = "u2032836";
+            </script>
+            <script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+            </div>
+            <div class="htmleaf-adv-footer">
+              <div class="htmleaf-adv-footer-pic">
+              <img src="http://www.htmleaf.com/templets/default/images/avd.png" alt>
+              </div>
+              <div class="htmleaf-adv-footer-desc">
+              <p>jQuery之家-自由分享jQuery、HTML5和CSS3的插件库</p>
+              </div>
+            </div>
+        </div>  -->  
+        <div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901171524.jpg" width="250" height="158" alt="jQuery鼠标驱动背景图片动画特效"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 380 </p>
+                <p><i class="fa fa-navicon"></i> 布局和界面</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/Layout-Interface/201901175498.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/Layout-Interface/201901175498.html" title="jQuery鼠标驱动背景图片动画特效">jQuery鼠标驱动背景图片动画特效</a>
+              </div>
+              <div class="plug-description">
+                这是一款jQuery鼠标驱动背景图片动画特效。该特效在鼠标移动悬停到某张缩略图上的时候，全屏背景图片会随之切换为这张缩略图的大图。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+<li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-17</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901161458.jpg" width="250" height="158" alt="jQuery带炫酷轮播图效果的Lightbox弹出层插件"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 497 </p>
+                <p><i class="fa fa-navicon"></i> Lightbox和对话框</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/Lightbox-Dialog/201901165496.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/Lightbox-Dialog/201901165496.html" title="jQuery带炫酷轮播图效果的Lightbox弹出层插件">jQuery带炫酷轮播图效果的Lightbox弹出层插件</a>
+              </div>
+              <div class="plug-description">
+                这是一款jQuery带炫酷轮播图效果的Lightbox弹出层插件。该lightbox插件在弹出层中，可以对所有图片进行轮播。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+<li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-16</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901151506.jpg" width="250" height="158" alt="Bootstrap4多级导航菜单插件"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 345 </p>
+                <p><i class="fa fa-navicon"></i> 菜单和导航</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/Menu-Navigation/201901155494.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/Menu-Navigation/201901155494.html" title="Bootstrap4多级导航菜单插件">Bootstrap4多级导航菜单插件</a>
+              </div>
+              <div class="plug-description">
+                这是一款Bootstrap4多级导航菜单插件。该插件扩展了原生bootstrap4的navbar，可生成多级导航菜单，并添加炫酷的CSS3动画效果。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+<li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-15</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901141652.jpg" width="250" height="158" alt="基于three.js的超酷线条动画特效"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 692 </p>
+                <p><i class="fa fa-navicon"></i> html5 canvas</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/html5/html5-canvas/201901145492.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/html5/html5-canvas/201901145492.html" title="基于three.js的超酷线条动画特效">基于three.js的超酷线条动画特效</a>
+              </div>
+              <div class="plug-description">
+                这是一款基于three.js的超酷线条动画特效。该特效使用THREE.MeshLine库来制作WebGL线条动画特效，共有5个示例效果。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/html5/"><img src="http://www.htmleaf.com/templets/default/images/html5-32.png" width="24" height="24" alt="html5"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-14</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901111539.jpg" width="250" height="158" alt="Bootstrap4动态模态窗口jquery插件"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 456 </p>
+                <p><i class="fa fa-navicon"></i> Lightbox和对话框</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/Lightbox-Dialog/201901115490.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/Lightbox-Dialog/201901115490.html" title="Bootstrap4动态模态窗口jquery插件">Bootstrap4动态模态窗口jquery插件</a>
+              </div>
+              <div class="plug-description">
+                这是一款Bootstrap4动态模态窗口jquery插件。通过该jquery插件，可以动态生成bootstrap4的模态窗口，可以实现简单的弹出框，对话框，以及复杂结构的模态窗口。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-11</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901101455.jpg" width="250" height="158" alt="jQuery全屏对称分割卡片式轮播图插件"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 763 </p>
+                <p><i class="fa fa-navicon"></i> 幻灯片和轮播图</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/Slideshow-Scroller/201901105488.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/Slideshow-Scroller/201901105488.html" title="jQuery全屏对称分割卡片式轮播图插件">jQuery全屏对称分割卡片式轮播图插件</a>
+              </div>
+              <div class="plug-description">
+                这是一款jQuery全屏对称分割卡片式轮播图插件。该轮播图插件使用jquery和TweenMax.js来制作。在布局上，将图片和内容分为左右两块区域，轮播图切换时，带有一些视觉差效果。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+<li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-10</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901091456.jpg" width="250" height="158" alt="jQuery多层图片背景视觉差特效插件"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 724 </p>
+                <p><i class="fa fa-navicon"></i> 视觉差滚动效果</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/shijuecha/201901095486.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/shijuecha/201901095486.html" title="jQuery多层图片背景视觉差特效插件">jQuery多层图片背景视觉差特效插件</a>
+              </div>
+              <div class="plug-description">
+                这是一款jQuery多层图片背景视觉差特效插件。该视觉差插件可以创建多个透明图层，然后在鼠标移动时，使各个图层生成炫酷的背景视觉差效果。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-09</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901081532.jpg" width="250" height="158" alt="简单的jQuery文字动画特效插件"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 567 </p>
+                <p><i class="fa fa-navicon"></i> 文本和超链接</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/Text-Link-Effects/201901085484.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/Text-Link-Effects/201901085484.html" title="简单的jQuery文字动画特效插件">简单的jQuery文字动画特效插件</a>
+              </div>
+              <div class="plug-description">
+                这是一款简单的jQuery文字动画特效插件。该插件通过js代码来修改文字的位置和透明度，来实现简单的文字显示动画效果。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-08</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901071452.jpg" width="250" height="158" alt="基于SVG的超酷圆形导航菜单特效"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 767 </p>
+                <p><i class="fa fa-navicon"></i> SVG</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/html5/SVG/201901075482.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/html5/SVG/201901075482.html" title="基于SVG的超酷圆形导航菜单特效">基于SVG的超酷圆形导航菜单特效</a>
+              </div>
+              <div class="plug-description">
+                这是一款基于SVG的超酷圆形导航菜单特效。该导航菜单通过SVG进行布局，然后通过js和CSS代码来在鼠标hover菜单时，制作菜单项的动画效果。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/html5/"><img src="http://www.htmleaf.com/templets/default/images/html5-32.png" width="24" height="24" alt="html5"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-07</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901041634.jpg" width="250" height="158" alt="4种炫酷CSS3 loading预加载动画特效"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 1398 </p>
+                <p><i class="fa fa-navicon"></i> CSS3动画</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/css3/css3donghua/201901045480.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/css3/css3donghua/201901045480.html" title="4种炫酷CSS3 loading预加载动画特效">4种炫酷CSS3 loading预加载动画特效</a>
+              </div>
+              <div class="plug-description">
+                这是一款超酷CSS3 loading预加载动画特效。该loading特效共有4种不同的效果，分别通过不同的CSS3 keyframes帧动画来完成。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-04</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201901031715.jpg" width="250" height="158" alt="超酷CSS3鼠标悬停图片背景动画特效"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 879 </p>
+                <p><i class="fa fa-navicon"></i> CSS3动画</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/css3/css3donghua/201901035478.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/css3/css3donghua/201901035478.html" title="超酷CSS3鼠标悬停图片背景动画特效">超酷CSS3鼠标悬停图片背景动画特效</a>
+              </div>
+              <div class="plug-description">
+                这是一款超酷CSS3鼠标悬停图片背景动画特效。该特效在鼠标悬停到图片上面的时候，通过CSS3帧动画和filter过滤器来制作非常炫酷的图片遮罩层动画效果。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-03</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1901/201812311535.jpg" width="250" height="158" alt="Bootstrap4数值输入插件"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 585 </p>
+                <p><i class="fa fa-navicon"></i> 表单</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/Form/201901025476.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/Form/201901025476.html" title="Bootstrap4数值输入插件">Bootstrap4数值输入插件</a>
+              </div>
+              <div class="plug-description">
+                这是一款Bootstrap4数值输入插件。通过该插件可以非常轻松的将input元素转换为数值输入spinner。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+              </ul>
+              <span class="pull-right">2019-01-02</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1812/201812281558.jpg" width="250" height="158" alt="jquery和CSS3简洁滑块设计效果"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 578 </p>
+                <p><i class="fa fa-navicon"></i> 表单</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/Form/201812285474.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/Form/201812285474.html" title="jquery和CSS3简洁滑块设计效果">jquery和CSS3简洁滑块设计效果</a>
+              </div>
+              <div class="plug-description">
+                这是一款jquery和CSS3简洁滑块设计效果。该滑块通过CSS3进行布局，然后通过简单的jquery代码来在用户拖动滑块时，获取相应的数值。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+<li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2018-12-28</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1812/201812271626.jpg" width="250" height="158" alt="基于bootsnav的响应式导航菜单特效"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 1154 </p>
+                <p><i class="fa fa-navicon"></i> 菜单和导航</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/Menu-Navigation/201812275472.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/Menu-Navigation/201812275472.html" title="基于bootsnav的响应式导航菜单特效">基于bootsnav的响应式导航菜单特效</a>
+              </div>
+              <div class="plug-description">
+                这是一款基于bootsnav的响应式导航菜单特效。该导航菜单包含了多级菜单，大型菜单，并且附带有炫酷的动画特效，非常实用。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+<li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2018-12-27</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1812/201812261618.jpg" width="250" height="158" alt="jQuery和CSS3响应式全屏商品介绍轮播图特效"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 1325 </p>
+                <p><i class="fa fa-navicon"></i> 幻灯片和轮播图</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/jQuery/Slideshow-Scroller/201812265470.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/jQuery/Slideshow-Scroller/201812265470.html" title="jQuery和CSS3响应式全屏商品介绍轮播图特效">jQuery和CSS3响应式全屏商品介绍轮播图特效</a>
+              </div>
+              <div class="plug-description">
+                这是一款jQuery和CSS3响应式全屏商品介绍轮播图特效。该轮播图特效适用于商城的商品介绍，它支持移动手机设备，效果非常炫酷。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/jQuery/"><img src="http://www.htmleaf.com/templets/default/images/jquery-32.png" width="24" height="24" alt="jQuery插件"></a></li>
+<li><a href="http://www.htmleaf.com/css3/"><img src="http://www.htmleaf.com/templets/default/images/css3-32.png" width="24" height="24"  alt="css3"></a></li>
+              </ul>
+              <span class="pull-right">2018-12-26</span>
+          </div>
+        </div>
+<div class="plugthumb">
+          <div class="tp">
+            <figure class="effect-bubba">
+              <img class="lazy" src="http://www.htmleaf.com/load.gif" data-original="http://img.htmleaf.com/1812/201812251446.jpg" width="250" height="158" alt="基于three.js的炫酷动画景观特效"/>
+              <figcaption>
+                <p><i class="fa fa-eye"></i> 1307 </p>
+                <p><i class="fa fa-navicon"></i> HTML5动画</p>
+                <p>Read More</p>
+                <a href="http://www.htmleaf.com/html5/html5donghua/201812255468.html">点击查看详细内容</a>
+              </figcaption>     
+            </figure>
+          </div>
+          <div class="plug-info">
+              <div class="plug-title">
+                <a href="http://www.htmleaf.com/html5/html5donghua/201812255468.html" title="基于three.js的炫酷动画景观特效">基于three.js的炫酷动画景观特效</a>
+              </div>
+              <div class="plug-description">
+                这是一款基于three.js的炫酷动画景观特效。该特效模拟第一人称运动视觉效果，提供3种类型的动画，非常炫酷。
+              </div>
+          </div>
+          <div class="plug-mesg">
+              <ul>
+                <li><a href="http://www.htmleaf.com/html5/"><img src="http://www.htmleaf.com/templets/default/images/html5-32.png" width="24" height="24" alt="html5"></a></li>
+              </ul>
+              <span class="pull-right">2018-12-25</span>
+          </div>
+        </div>
+
+        <!--插件-->
+        <div class="leaf-index-gongju clearfix">
+          <div class="leaf-gongju">
+            <a class="leaf-gongju-link" href="http://www.htmleaf.com/jquery-doc/" target="_blank">
+             <span class="leaf-gongju-thumb" style="background-image: url(http://www.htmleaf.com/templets/default/images/banner/banner_bg_9.png);" >
+             <span class="leaf-gongju-biaoti">jQuery1.11.1版本中文在线文档</span>
+             </span>
+            </a>
+          </div>
+            <div class="leaf-gongju">
+              <a class="leaf-gongju-link" href="http://www.htmleaf.com/js/jquery-all-version.html" target="_blank">
+                <span class="leaf-gongju-thumb" style="background-image: url(http://www.htmleaf.com/templets/default/images/banner/banner_bg_4.png);">
+                  <span class="leaf-gongju-biaoti">所有版本的jQuery文件和CDN加速地址</span>
+                </span>
+              </a>
+            </div>
+            <div class="leaf-gongju">
+              <a class="leaf-gongju-link" href="http://www.htmleaf.com/ziliaoku/font-awesome/font-awesome-4-4-0.html" target="_blank">
+                <span class="leaf-gongju-thumb" style="background-image: url(http://www.htmleaf.com/templets/default/images/banner/banner_bg_1.png);)">
+                  <span class="leaf-gongju-biaoti">Font Awesome4.4.0所有图标参考</span>
+                </span>
+              </a>
+            </div>
+        </div>
+        <!--最新教程-->
+        <div class="leaf-index-title">
+           <h2 class="ct-letterpress">最新教程</h2>
+        </div>
+        <div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201803075009.html" title="野草云怎么样？推荐！香港优质IDC服务商" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1803/201803071513.jpg" width="300" height="170" alt="野草云怎么样？推荐！香港优质IDC服务商"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201803075009.html" title="野草云怎么样？推荐！香港优质IDC服务商" target="_blank">野草云怎么样？推荐！香港优质IDC服务商</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                野草云（原野草主机），成立于2012年。我们定位于为有一定技术的IT从业人员、中小企业提供 稳定/快速/高性价比 的海外主机产品。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2018-03-07
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201709084730.html" title="Element Traversal规范中的元素遍历方法" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1709/201709081524.jpg" width="300" height="170" alt="Element Traversal规范中的元素遍历方法"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201709084730.html" title="Element Traversal规范中的元素遍历方法" target="_blank">Element Traversal规范中的元素遍历方法</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                对于元素间的空格，IE9以前的版本不会返回文本节点，而其他浏览器都会将空格当做是文本节点返回。这就导致了在使用childNodes和firstChild的属性时行为的不一致。为了弥补这一差异，而...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-09-08
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201708234701.html" title="HTML5 classList操作类名属性简介" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1708/201708231556.jpg" width="300" height="170" alt="HTML5 classList操作类名属性简介"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201708234701.html" title="HTML5 classList操作类名属性简介" target="_blank">HTML5 classList操作类名属性简介</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                在传统的javascript中，要完成类名的删除非常麻烦。在HTML5中新增了一个操作类名的方式，可以让操作更加简单安全，这个方式就是为所有的元素添加classList属性。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-08-23
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201708094676.html" title="HTML5 meta viewport参数简介" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1708/201708091531.jpg" width="300" height="170" alt="HTML5 meta viewport参数简介"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201708094676.html" title="HTML5 meta viewport参数简介" target="_blank">HTML5 meta viewport参数简介</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                viewport是什么？通俗的讲，viewport是用户网页的可视区域。移动设备上的viewport就是设备的屏幕上能用来显示我们的网页的那一块区域。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-08-09
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201707264651.html" title="JavaScript中数组的栈方法" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1707/201707261533.jpg" width="300" height="170" alt="JavaScript中数组的栈方法"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201707264651.html" title="JavaScript中数组的栈方法" target="_blank">JavaScript中数组的栈方法</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                ECMAScript5为数组提供了类似栈结构的方法。栈是一种LIFO（Last-In-First-Out）的数据结构，即最先添加到容器中的项目最早被移出。这种数据结构可以限制插入和删除项目。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-07-26
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201707124626.html" title="JavaScript中的归并方法" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1707/201707121546.jpg" width="300" height="170" alt="JavaScript中的归并方法"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201707124626.html" title="JavaScript中的归并方法" target="_blank">JavaScript中的归并方法</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                ECMAScript5为数组定义了2个归并方法：reduce()和reduceRight()。这两个方法都会迭代数组的随意项，然后构建一个最终返回的值。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-07-12
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201707054613.html" title="JavaScript中的迭代方法" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1707/201707051518.jpg" width="300" height="170" alt="JavaScript中的迭代方法"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201707054613.html" title="JavaScript中的迭代方法" target="_blank">JavaScript中的迭代方法</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                ECMAScript5为数组定义了5个迭代方法。分别是every()、filter()、forEach()、map()和some()方法。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-07-05
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201706224590.html" title="通过HTML5 FileReader实现上传图片预览功能" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1706/201706221525.jpg" width="300" height="170" alt="通过HTML5 FileReader实现上传图片预览功能"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201706224590.html" title="通过HTML5 FileReader实现上传图片预览功能" target="_blank">通过HTML5 FileReader实现上传图片预览功能</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                在上传图片到服务器之前，我们希望可以预览一下要上传的图片。这个功能可以通过HTML5 的FileReader()方法来实现。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-06-22
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201706164579.html" title="通过jquery获取上传文件的名称、类型和大小" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1706/201706161528.jpg" width="300" height="170" alt="通过jquery获取上传文件的名称、类型和大小"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201706164579.html" title="通过jquery获取上传文件的名称、类型和大小" target="_blank">通过jquery获取上传文件的名称、类型和大小</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                在文件上传到服务器之前，我们可以通过jquery来获取上传文件的名称，类型和尺寸大小。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-06-16
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201706124569.html" title="使用HTML5和CSS3制作遮罩文字特效" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1706/201706121514.jpg" width="300" height="170" alt="使用HTML5和CSS3制作遮罩文字特效"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201706124569.html" title="使用HTML5和CSS3制作遮罩文字特效" target="_blank">使用HTML5和CSS3制作遮罩文字特效</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                Webkit内核的浏览器支持CSS3的background-clip属性，它能够完成和photoshop相同的文字遮罩效果。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-06-12
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201706064558.html" title="使用jquery将彩色图片转换为黑白图片" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1706/201706061542.jpg" width="300" height="170" alt="使用jquery将彩色图片转换为黑白图片"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201706064558.html" title="使用jquery将彩色图片转换为黑白图片" target="_blank">使用jquery将彩色图片转换为黑白图片</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                有很多种方法可以达到这种图片转换的效果，包括使用CSS3滤镜，HTML5 Canvas和jquery插件等。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-06-06
+           </div>
+        </div>
+<div class="leaf-jiaoc">
+           <div class="leaf-jiaoc-thumb">
+              <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201705314547.html" title="为HTML5 Placeholder占位文字添加CSS样式" target="_blank">
+                <img class="lazy" src="load.gif" data-original="http://img.htmleaf.com/1705/201705311453.jpg" width="300" height="170" alt="为HTML5 Placeholder占位文字添加CSS样式"/>
+              </a>
+           </div>
+           <div class="leaf-jiaoc-info">
+              <div class="leaf-jiaoc-title">
+                <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201705314547.html" title="为HTML5 Placeholder占位文字添加CSS样式" target="_blank">为HTML5 Placeholder占位文字添加CSS样式</a>
+              </div>
+              <div class="leaf-jiaoc-description">
+                在HTML5中新增了许多新特性，其中placeholder就是其中之一。placeholder属性规定可描述输入字段预期值的简短的提示信息。该提示会在用户输入值之前显示在输入字段中。...
+              </div>
+           </div>
+           <div class="leaf-jiaoc-date">
+              <i class="fa fa-clock-o"></i> 2017-05-31
+           </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" id="rocket-to-top">
+      <div style="opacity:0;display: block;" class="level-2"></div>
+      <div class="level-3"></div>
+    </div>
+    <!--foot start-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="hi-footer mlra oh pt30  c333">
+        <div class="leaf-foot-content">
+        <p class="mb10">
+          <a href="http://www.htmleaf.com/about/About_Us.html" target="_blank" rel="nofollow">关于我们</a><span class="c999 ml10 mr10">|</span><a href="http://www.htmleaf.com/about/Contact_Us.html" target="_blank" rel="nofollow">联系我们</a><span class="c999 ml10 mr10">|</span><a href="http://www.htmleaf.com/about/mianzeshengming.html" target="_blank" rel="nofollow">免责声明</a><span class="c999 ml10 mr10">|</span><a href="http://www.htmleaf.com/about/yijianfankui.html" target="_blank" rel="nofollow">意见反馈</a><span class="c999 ml10 mr10">|</span><a href="http://www.htmleaf.com/sitemap.html" target="_blank" rel="nofollow">网站地图</a>
+        </p>
+        <p>友情链接：<a href="http://www.htmleaf.com/" title="jQuery之家">jQuery之家</a> | <a href="http://www.metinfo.cn" title="自助建站" target="_blank" rel="nofollow">自助建站</a> | <a href="http://www.awesomes.cn" title="前端资源库" target="_blank">awesomes-cn</a> | <a href="http://www.aseoe.com/" target="_blank" title="WEB前端开发" rel="nofollow">WEB前端开发</a> | <a href="http://www.hicss.net/" target="_blank" title="海玉’s Blog">海玉’s Blog</a> | <a href="http://www.huiyi8.com/chajian/" target="_blank" title="jQuery插件" rel="nofollow">jQuery插件</a> | <a href="http://www.w3cui.com/" target="_blank" title="W3cui" rel="nofollow">W3cui</a></p>
+        <p>jQuery之家-htmleaf.com自由分享各种<a href="http://www.htmleaf.com/jQuery/">jQuery</a>、<a href="http://www.htmleaf.com/html5/">HTML5</a>、<a href="http://www.htmleaf.com/css3/">CSS3等前端开发插件。</a></p>
+        <p>
+          备案号：桂ICP备14007998号-1 | CopyRight&copy;2014-2018 Inc.All Right Reserved htmleaf.com jQuery之家 <i class="fa fa-leaf"></i> 版权所有&nbsp;&nbsp;&nbsp;
+          <script language="javascript" type="text/javascript" src="http://js.users.51.la/17362262.js"></script>
+<noscript><a href="http://www.51.la/?17362262" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/17362262.asp" style="border:none" /></a></noscript>
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--foot end-->
+    <script type="text/javascript" src="http://www.htmleaf.com/templets/default/js/leaf.js"></script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"6","bdPos":"right","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+  </body>
+  </html>
